@@ -13,3 +13,4 @@ _assertEqual("abcd\nacc", _getText(_textarea("ta1")));
 
 _setPassword(_password("p1"), "Jw0PAhY=");
 _assertEqual("fafasyyuy", _getText(_password("p1")));
+
