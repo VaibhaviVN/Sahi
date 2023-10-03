@@ -1,0 +1,15 @@
+_navigateTo("http://sahitest.com/demo/formTest.htm");
+_setValue(_textbox(0), "dkjd");
+_assertEqual("dkjd", _getValue(_textbox("t1")));
+
+_setValue(_textbox(1), "dkjd1y23876187^$^$%");
+_assertEqual("dkjd1y23876187^$^$%", _getValue(_textbox(1)));
+
+_setValue(_textbox(2), "12432532");
+_assertEqual("12432532", _getValue(_textbox("name")));
+
+_setValue(_textarea("ta1"), "abcd\nacc");
+_assertEqual("abcd\nacc", _getText(_textarea("ta1")));
+
+_setPassword(_password("p1"), "Jw0PAhY=");
+_assertEqual("fafasyyuy", _getText(_password("p1")));
