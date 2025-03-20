@@ -11,3 +11,4 @@ _assert(_isVisible(_textbox("total")));
 _assertEqual("1150", _textbox("total").value);
 _click(_button("Logout"));
 
+_click(_button("Logout"));
